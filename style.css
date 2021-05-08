@@ -1,0 +1,660 @@
+        body {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+        header ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header ul>li {
+            list-style-type: none;
+        }
+        
+        header ul>li>a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        header ul li a i {
+            padding-right: 4px;
+        }
+        
+        footer ul>li:hover a,
+        header ul>li:hover a {
+            color: yellow;
+        }
+        
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 2em;
+        }
+        
+        #entete {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            position: relative;
+        }
+        
+        #entete img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #entete .img2 {
+            float: right;
+        }
+        /* ********************** NAVBAR *********************** */
+        
+        .fixe {
+            width: 100%;
+            position: fixed;
+        }
+        
+        header nav {
+            background: #013a08;
+            /* position: fixed; */
+            width: 100%;
+            opacity: 1.0;
+        }
+        
+        header ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        header li {
+            float: left;
+            position: relative;
+            font-size: 1.2em;
+        }
+        
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        nav li:hover .submenu {
+            display: inline-block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 0;
+            z-index: 1000;
+        }
+        
+        header li a {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 18px 16px;
+        }
+        
+        #logo img {
+            float: left;
+            width: 60px;
+            height: 57px;
+        }
+        
+        .submenu {
+            display: none;
+            background: seagreen;
+        }
+        
+        .submenu li:hover {
+            width: 100%;
+            background-color: sienna;
+        }
+        
+        .submenu li:hover a {
+            color: #EEE;
+            font-weight: 600;
+        }
+        
+        header a {
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .submenu li {
+            border-bottom: 1px solid #CCC;
+        }
+        
+        .submenu li a {
+            padding: 15px 30px;
+            font-size: 13px;
+            color: #fff;
+            width: 110px;
+        }
+        /* *************************** IMAGE PRINCIPALE ************************** */
+        
+        #arrPlan {
+            padding-top: 100px;
+            background: url(img/unb.jpg) no-repeat fixed 50% 50%;
+            background-size: cover;
+            height: 750px;
+            animation: slider 15s infinite;
+        }
+        
+        @keyframes slider {
+            0% {
+                background-image: url(img/nazi-boni.jpg);
+            }
+            25% {
+                background-image: url(img/b.jpg);
+            }
+            50% {
+                background-image: url(img/1-14.jpg);
+            }
+            75% {
+                background-image: url(img/tic-afeccte.jpg);
+            }
+        }
+        
+        #arrPlan h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            color: rgb(202, 4, 4);
+            font-size: 4em;
+            margin-top: 100px;
+            text-shadow: 1px 3px 2px black;
+        }
+        
+        #premierTrait {
+            height: 1px;
+            width: 30%;
+            margin: -3px auto;
+            background: yellow;
+            box-shadow: 1px 3px 2px black;
+        }
+        
+        #arrPlan h3 {
+            text-align: center;
+            color: green;
+            font-size: 2em;
+            text-shadow: 1px 3px 2px black;
+        }
+        /* ************************* PRESENTATION ****************************** */
+        
+        #presentation {
+            background: #fffae9;
+            padding: 5px 0 10px 0;
+        }
+        
+        #introText {
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        
+        #introText h2::before {
+            content: "|";
+            padding-right: 10px;
+            margin-top: -5px;
+            font-size: 2em;
+            color: brown;
+        }
+        
+        #introText h2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 1.5em;
+            text-align: left;
+            text-transform: none;
+            width: 500px;
+            color: brown;
+        }
+        
+        .information {
+            display: flex;
+            padding: 30px;
+            margin: 20px;
+            border: 1px solid rgb(245, 109, 109);
+            background: rgb(245, 109, 109);
+            border-radius: 10px;
+            box-shadow: 4px 6px 4px black;
+        }
+        
+        .information:hover {
+            border: 1px solid rgba(255, 100, 255, 0.4);
+            ;
+            background: rgba(255, 100, 255, 0.4);
+            content: "Ecole Superieure d'Informatique";
+            animation: .8s ease-in-out;
+        }
+        
+        .information:hover .contenu p {
+            color: black;
+        }
+        
+        .information .contenu h4 {
+            text-align: center;
+            font-size: 1.5em;
+            color: green;
+        }
+        
+        .information .img {
+            padding: 20px;
+            margin: 10px;
+            width: 30%
+        }
+        
+        .information .img img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 4px black
+        }
+        
+        .information .contenu {
+            padding: 20px;
+            width: 70%;
+        }
+        
+        .information .contenu p {
+            font-size: 1.2em;
+            color: white;
+            text-align: center;
+        }
+        
+        .information .contenu a {
+            text-decoration: none;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid green;
+            border-radius: 10px;
+            background: green;
+            color: white;
+        }
+        
+        .information .contenu a:hover {
+            padding: 15px;
+            color: white;
+            background: red;
+            border: 1px solid red;
+        }
+        
+        #actualite {
+            font-family: Georgia;
+            width: 100%;
+            display: flex;
+        }
+        
+        #actualite:hover {
+            cursor: pointer;
+        }
+        
+        .info1 {
+            background-image: url(img/informatique.jpg);
+        }
+        
+        .info2 {
+            background-image: url(img/b-1.jpg);
+        }
+        
+        .info3 {
+            background-image: url(img/photo1.jpg);
+        }
+        
+        .info1,
+        .info2,
+        .info3 {
+            padding: 30px;
+            margin: 20px;
+            width: 30%;
+            height: 250px;
+            /* background-image: url(img/unb.jpg); */
+            border-radius: 10px;
+            box-shadow: 5px 6px 5px black;
+        }
+        
+        .info1 a,
+        .info2 a,
+        .info3 a {
+            display: flex;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            color: rgb(250, 105, 0);
+            font-size: 1.2em;
+            margin: 100px 0 30px 100px;
+        }
+        
+        .info1 a i,
+        .info2 a i,
+        .info3 a i {
+            padding-top: 3px;
+            margin-left: 5px;
+        }
+        
+        .info1 a:hover,
+        .info2 a:hover,
+        .info3 a:hover {
+            color: red;
+        }
+        /* ************************* FOOTER ************************** */
+        
+        footer {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 400px;
+            background: #013a08;
+        }
+        
+        #c00 img {
+            margin: 50px 20px 0 50px;
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        
+        #c00 h4 {
+            font-size: 1.3em;
+            margin-left: 25px;
+            color: white;
+        }
+        
+        #c00,
+        #c01,
+        #c02,
+        #c03 {
+            width: 23%;
+            float: left;
+        }
+        
+        #c01 h4,
+        #c02 h4,
+        #c03 h4 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            color: red;
+            font-size: 2em;
+            margin-top: 60px;
+            text-shadow: 1px 3px 2px black;
+        }
+        
+        #c01 p,
+        #c02 p,
+        #c03 p {
+            padding-left: 60px;
+            text-align: left;
+            color: honeydew;
+            font-size: 1em;
+        }
+        
+        #c03 p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        footer a {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        footer a:hover {
+            color: yellow;
+        }
+        
+        footer div p a i,
+        footer p i {
+            padding-right: 8px;
+        }
+        
+        #rights {
+            width: 100%;
+            height: 20px;
+            background: #fff;
+            color: green;
+            text-align: center;
+            font-size: 1.2em;
+            font-family: Georgia;
+        }
+        /* *************************** formation *************************** */
+        
+        .toggle-menu {
+            position: absolute;
+            margin-top: 95px;
+            display: none;
+        }
+        
+        #toggle-Btn {
+            margin-top: -90px;
+            width: 100%;
+            background: green;
+        }
+        
+        .toggle-icon {
+            position: relative;
+            font-size: 30px;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .toggle-items {
+            list-style: none;
+            background-color: green;
+            width: 210px;
+            height: 500px;
+            line-height: 40px;
+            position: absolute;
+            display: none;
+            -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        
+        @-webkit-keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        @-ms-keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        li[class^="toggle-item-"] a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        li[class^="toggle-item-"] a:hover {
+            color: yellow!important;
+        }
+        
+        .toggle-item-1 a {
+            color: rgb(97 159 255)!important;
+        }
+        
+        #toggle-btn {
+            display: none;
+        }
+        
+        #toggle-btn:checked+ul {
+            display: block;
+        }
+        
+        @media screen and (max-width:953px) {
+            .toggle-menu {
+                display: block;
+                position: relative;
+            }
+            .toggle-menu li:hover .submenu {
+                display: inline-block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding: 0;
+                z-index: 100;
+            }
+            .toggle-menu .submenu li a {
+                padding: 5px 10px;
+                font-size: 13px;
+                color: #fff;
+                width: 110px;
+            }
+            #fixe {
+                position: unset;
+            }
+            #fixe nav {
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width:953px) {
+            .toggle-menu {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 760px) {
+            /* ********************** entete ********************* */
+            #entete img {
+                width: 80px;
+                height: 80px;
+            }
+            #arrPlan h1 {
+                font-size: 2em;
+            }
+            #arrPlan h3 {
+                font-size: 1em;
+            }
+            #introText h2 {
+                font-size: 14px;
+            }
+            #introText {
+                font-size: 16px;
+            }
+            .img,
+            .contenu {
+                width: 100%;
+                display: block;
+            }
+            .contenu h4 {
+                font-size: 14px;
+            }
+            #esi .contenu p {
+                font-size: 14px;
+            }
+            .information .img img {
+                width: 240px;
+                height: 200px;
+            }
+            .information .img {
+                padding: 10px;
+                margin: 5px;
+            }
+            .information .contenu {
+                padding: 5px;
+                width: 250px;
+            }
+            .information {
+                display: block;
+                padding: 10px;
+                margin: 10px;
+                margin-bottom: 20px;
+            }
+            #actualite {
+                display: block;
+            }
+            .info1,
+            .info2,
+            .info3 {
+                padding: 10px;
+                margin: 5px;
+                width: 270px;
+                height: 150px;
+            }
+            .information .contenu a {
+                font-size: 1.1em;
+                padding: 5px;
+            }
+            .information .contenu a:hover {
+                padding: 5px;
+            }
+            .info1 a,
+            .info2 a,
+            .info3 a {
+                margin: 60px 20px 20px 20px;
+            }
+            /* *********************** footer ******************** */
+            footer {
+                height: 230vh;
+            }
+            #c00,
+            #c01,
+            #c02,
+            #c03 {
+                margin-top: -20px;
+                margin: 0;
+                display: block;
+                width: 100%;
+            }
+        }

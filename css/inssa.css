@@ -1,0 +1,112 @@
+.presentaINSSA,
+.formationInssa,
+.infoInssa {
+    padding: 0;
+    margin: 0;
+}
+
+#bodycontainer h2 {
+    color: green;
+}
+
+#arrierePlan h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(202, 4, 4);
+    font-size: 4em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+
+#arrierePlan h3 {
+    text-align: center;
+    color: green;
+    font-size: 2em;
+    text-shadow: 1px 3px 2px black;
+}
+
+.creation,
+.mission,
+.condition,
+.sanction,
+.specialite,
+.doctorat,
+.inscription,
+.DU,
+.localisationInssa,
+.formationInssa .organigram {
+    font-size: 1.1em;
+    margin: 15px 50px;
+    padding: 20px 50px;
+    background: rgb(255, 255, 250);
+    box-shadow: 1px 3px 5px black;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.presentaINSSA h4 {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 5px;
+    color: red;
+}
+
+.master h4,
+.sanction h4 {
+    font-size: 1.4em;
+    text-align: center;
+    color: red;
+}
+
+.formationInssa table td,
+.formationInssa table th,
+.formationInssa table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.formationInssa table td,
+.formationInssa table th {
+    padding: 15px;
+    text-align: left;
+}
+
+@media screen and (max-width: 780px) {
+    #arrierePlan h1 {
+        font-size: 2em;
+    }
+    #arrierePlan h3 {
+        font-size: 1.4em;
+    }
+    .master h4,
+    .sanction h4,
+    .presentaINSSA h4 {
+        font-size: 1.1em;
+        text-align: center;
+        color: red;
+    }
+    .creation,
+    .mission,
+    .condition,
+    .sanction,
+    .specialite,
+    .doctorat,
+    .inscription,
+    .DU,
+    .localisationInssa,
+    .formationInssa .organigram {
+        font-size: 14px;
+        margin: 10px;
+        padding: 10px;
+    }
+    #bodycontainer h2 {
+        font-size: 1.3em;
+    }
+    .formationInssa table {
+        font-size: 0.4em;
+    }
+    .formationInssa table td,
+    .formationInssa table th {
+        padding: 0px;
+    }
+}
